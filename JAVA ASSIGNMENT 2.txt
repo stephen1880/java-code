@@ -3,8 +3,6 @@ import java.util.Scanner;
 public class LibraryFineCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        // i. Take inputs
         System.out.print("Enter Book ID: ");
         String bookID = scanner.nextLine();
 
@@ -13,11 +11,8 @@ public class LibraryFineCalculator {
 
         System.out.print("Enter Return Date (in days): ");
         int returnDate = scanner.nextInt();
-
-        // ii. Calculate days overdue
         int daysOverdue = returnDate - dueDate;
 
-        // iii. Use if-else to determine fine rate
         int fineRate = 0;
         int fineAmount = 0;
 
@@ -32,7 +27,6 @@ public class LibraryFineCalculator {
             fineAmount = fineRate * daysOverdue;
         }
 
-        // iv. Display results
         System.out.println("--- Library Fine Details ---");
         System.out.println("Book ID: " + bookID);
         System.out.println("Due Date: " + dueDate);
@@ -44,3 +38,5 @@ public class LibraryFineCalculator {
         scanner.close();
     }
 }
+
+
