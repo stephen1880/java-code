@@ -1,4 +1,6 @@
-import java.util.Scanner;
+
+        
+        input.close();import java.util.Scanner;
 public class Dicount{
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
@@ -22,4 +24,7 @@ public class Dicount{
         
         input.close();
     }
+}
+    }
+
 }
