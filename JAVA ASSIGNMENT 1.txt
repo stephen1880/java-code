@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Dicount{
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        System.out.println("enter amount");
+        double amount = input.nextDouble();
+        double discount=0.0;
+        if (amount>5000){
+        discount=amount*0.2;
+        }
+       else if (amount >1000 && amount <= 5000){
+        discount=amount*0.1;
+       }
+        else {
+        discount=0.0;
+        }
+        double finalAmount = amount - discount;
+        System.out.println("original Amount=" +amount);
+        System.out.println("Discount =" +discount);
+        System.out.println("final amount=" +amount);
+        System.out.println("thank you for shopping with us");
+        
+        input.close();
+    }
+}
